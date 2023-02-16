@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    req.json({ message: 'Welcome to contact book application.' });
+    res.json({ message: 'Welcome to contact book application.' });
 });
 
 app.use('/api/contacts', contactsRouter);
